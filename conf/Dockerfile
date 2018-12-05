@@ -23,7 +23,7 @@ EXPOSE 6379
 
 
 # ADDITIONAL SET
-RUN apk add --update imagemagick git curl htop wget && rm -rf /var/cache/apk/*
+RUN apk add --update imagemagick git curl htop wget sqlite socat && rm -rf /var/cache/apk/*
 # NODEJS
 RUN apk add --update nodejs && rm -rf /var/cache/apk/*  
 
